@@ -14,7 +14,7 @@ install:
 
 script:
 #   - jupyter nbconvert Yijie_Final_Project_PT3_Final.ipynb --to slides  --reveal-prefix=reveal.js
-    - jupyter nbconvert Yijie_Final_Project_PT3_Final.ipynb --to slides  --reveal-prefix=reveal.js --template=nbextensions
+    - jupyter nbconvert Yijie_Final_Project_PT3_Final.ipynb --to slides  --reveal-prefix=reveal.js 
 
 after_success: |
     if [ -n "$GITHUB_API_KEY" ]; then
