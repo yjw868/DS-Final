@@ -13,7 +13,8 @@ install:
     - mv reveal.js-master reveal.js
 
 script:
-    - jupyter nbconvert Yijie_Final_Project_PT3_Final.ipynb --to slides --reveal-prefix=reveal.js
+#   - jupyter nbconvert Yijie_Final_Project_PT3_Final.ipynb --to slides  --reveal-prefix=reveal.js
+    - jupyter nbconvert Yijie_Final_Project_PT3_Final.ipynb --to slides --template=nbextensions --reveal-prefix=reveal.js
 
 after_success: |
     if [ -n "$GITHUB_API_KEY" ]; then
